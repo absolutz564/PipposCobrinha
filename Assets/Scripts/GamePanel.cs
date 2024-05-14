@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,7 +8,7 @@ public class GamePanel : MonoBehaviour {
     /// <summary>
     /// Text showing current score.
     /// </summary>
-    private Text textScore;
+    public Text textScore;
     /// <summary>
     /// Text showing high score.
     /// </summary>
@@ -28,7 +29,7 @@ public class GamePanel : MonoBehaviour {
         set
         {
             _score = value;
-            textScore.text = value.ToString();
+            textScore.text = "x" + value.ToString();
         }
     }
 
@@ -50,7 +51,7 @@ public class GamePanel : MonoBehaviour {
 
     // Use this for initialization
     void Awake () {
-        textScore = transform.Find("Score").GetComponent<Text>();
+        //textScore = transform.Find("Score").GetComponent<TextMeshProUGUI>();
         textHighScore = transform.Find("High Score").GetComponent<Text>();
     }
 	

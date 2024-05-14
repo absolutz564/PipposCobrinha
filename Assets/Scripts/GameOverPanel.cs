@@ -8,7 +8,7 @@ public class GameOverPanel : MonoBehaviour
     /// <summary>
     /// Text displayed before score value. 
     /// </summary>
-    private String textPrefix;
+    public String textPrefix;
 
     /// <summary>
     /// Text showing high score.

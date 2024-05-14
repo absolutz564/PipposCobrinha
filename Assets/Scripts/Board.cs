@@ -111,12 +111,14 @@ public class Board : MonoBehaviour, IEnumerable<Tile>
         }
 
         this[5, 5].Content = TileContent.Apple;
+
+        rectTransform.localPosition = new Vector2(40,-400);
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        Debug.Log(rectTransform.localPosition);
     }
 
     public IEnumerator<Tile> GetEnumerator()

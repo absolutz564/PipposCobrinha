@@ -13,7 +13,7 @@ namespace Utils
         /// <returns>random element from list</returns>
         public static T RandomElement<T>(this IList<T> list)
         {
-            return list[Random.Range(0, list.Count)];
+            return list[Random.Range(2, list.Count-4)];
         }
 
         /// <summary>

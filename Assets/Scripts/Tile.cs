@@ -18,6 +18,7 @@ public class Tile : MonoBehaviour
     /// Sprite for head of snake.
     /// </summary>
     public Sprite SnakesHead;
+    public Sprite SnakesNeck;
     /// <summary>
     /// Sprite for snake's body.
     /// </summary>
@@ -34,6 +35,7 @@ public class Tile : MonoBehaviour
     /// Sprite for snake's L shape
     /// </summary>
     public Sprite SnakesL;
+    public Sprite SnakesLEars;
     /// <summary>
     /// Sprite for snake's L bulged shape
     /// </summary>
@@ -95,6 +97,9 @@ public class Tile : MonoBehaviour
                 case TileContent.SnakesHead:
                     image.sprite = SnakesHead;
                     break;
+                case TileContent.SnakesNeck:
+                    image.sprite = SnakesNeck;
+                    break;
                 case TileContent.SnakesBody:
                     image.sprite = SnakesBody;
                     break;
@@ -106,6 +111,9 @@ public class Tile : MonoBehaviour
                     break;
                 case TileContent.SnakesL:
                     image.sprite = SnakesL;
+                    break;
+                case TileContent.SnakesLEars:
+                    image.sprite = SnakesLEars;
                     break;
                 case TileContent.SnakesLBulged:
                     image.sprite = SnakesLBulged;
